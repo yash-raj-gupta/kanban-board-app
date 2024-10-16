@@ -98,7 +98,7 @@ return (
                 <div className='column-layout'>
                     <Column title="Backlog" tickets={tickets.filter((task) => task.status === 'Backlog')} ordering={ordering} grouping={grouping} users={users}  />
                     <Column title="Todo" tickets={tickets.filter((task) => task.status === 'Todo')} ordering={ordering} grouping={grouping} users={users}/>
-                    <Column title="In Progress" tickets={tickets.filter((task) => task.status === 'In progress')} ordering={ordering} grouping={grouping} users={users}/>
+                    <Column title="In progress" tickets={tickets.filter((task) => task.status === 'In progress')} ordering={ordering} grouping={grouping} users={users}/>
                     <Column title="Done" tickets={tickets.filter((task) => task.status === 'Done')} ordering={ordering} grouping={grouping} users={users}/>
                     <Column title="Cancelled" tickets={tickets.filter((task) => task.status === 'Cancelled')} ordering={ordering} grouping={grouping} users={users}/>
                     
