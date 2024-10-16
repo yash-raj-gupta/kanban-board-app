@@ -1,12 +1,19 @@
 .column {
     /* padding: 10px; */
   width: calc(100% / var(--number-of-columns));
+
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   padding: 1rem 1rem 1rem 1rem;
 
+  }
+
+  @media screen and (max-width: 768px){
+    .column{
+      width: 250px;
+    }
   }
   .column-header{
     display: flex;

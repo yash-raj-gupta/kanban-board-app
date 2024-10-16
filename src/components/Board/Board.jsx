@@ -30,23 +30,23 @@ const KanbanBoard = () => {
     const handleGroupingChange = (e) => {
         const newGrouping = e.target.value;
         setGrouping(newGrouping);
-        localStorage.setItem('grouping', newGrouping); // Save grouping to localStorage
+        localStorage.setItem('grouping', newGrouping); 
       };
     
       const handleOrderingChange = (e) => {
         const newOrdering = e.target.value;
         setOrdering(newOrdering);
-        localStorage.setItem('ordering', newOrdering); // Save ordering to localStorage
+        localStorage.setItem('ordering', newOrdering); 
       };
 
     useEffect(() => {
         let numberOfCols = 0;
         if (grouping === 'status') {
-            numberOfCols = 5; // Backlog, Todo, In Progress, Done, Cancelled
+            numberOfCols = 5; 
         } else if (grouping === 'user') {
             numberOfCols = users.length;
         } else if (grouping === 'priority') {
-            numberOfCols = 5; // High Priority, Medium Priority, Low Priority
+            numberOfCols = 5; 
         }
         document.documentElement.style.setProperty('--number-of-columns', numberOfCols);
 
